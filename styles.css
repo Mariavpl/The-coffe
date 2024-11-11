@@ -17,7 +17,7 @@ body {
 }
 
 .left {
-    width: 60%;
+    width: 70%;
     background-color: white;
     position: relative;
     padding: 10px;
@@ -25,7 +25,7 @@ body {
 }
 
 .right {
-    width: 48%;
+    width: 47%;
     height:1000px;
     background-color: #d2dafe;
     color: white;
@@ -228,7 +228,7 @@ h3 {
     top: 20px;
     font-size: 20px;
     padding-top: 15px;
-    margin-left: 380px;
+    margin-left: 430px;
     cursor: pointer;
     z-index: 10;
     transition: transform 0.3s ease; /* Agregar una transición para el hover */

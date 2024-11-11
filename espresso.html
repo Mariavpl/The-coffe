@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordena tu Bebida - Mocha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f7213f811.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="info-section">
+                <h1>C H O C O L A T E</h1>
+                <h2 class="mocha-title">Espress</h2>
+                <p class="description">Un delicioso café con sabor a chocolate que encantará a los más exigentes.</p>
+                <div class="extras-size-container">
+                    <div class="extras">
+                        <h3>ADD EXTRAS</h3>
+                        <label><input type="radio" name="extra" value="ninguno"> Ninguno</label>
+                        <label><input type="radio" name="extra" value="cinamon"> Cinnamon</label>
+                        <label><input type="radio" name="extra" value="vanilla"> Vanilla</label>
+                        <label><input type="radio" name="extra" value="caramel"> Caramel</label>
+                    </div>
+                    <div class="size">
+                        <h3>Size</h3>
+                        
+                        <!-- Carrusel de Tamaño 1 -->
+                        <div class="size-selector" id="itemcarrusel-1">
+                            <div class="tarjetacarrusel" id="tarjetacarrusel-1">
+                                <img src="taza-de-cafe.png" alt="Vaso de café" class="coffee-cup">
+                            </div>
+                            <div class="flechacarrusel">
+                                <a href="#" class="fa-solid fa-arrow-left"></a>
+                                <a href="#" class="fa-solid fa-arrow-right"></a>
+                            </div>
+                            <div class="selected-size">Grande</div>
+                        </div>
+                        
+                        <!-- Carrusel de Tamaño 2 -->
+                        <div class="size-selector" id="itemcarrusel-2">
+                            <div class="tarjetacarrusel" id="tarjetacarrusel-2">
+                                <img src="vaso-de-papel.png" alt="Vaso de café" class="coffee-cup">
+                            </div>
+                            <div class="flechacarrusel">
+                                <a href="#" class="fa-solid fa-arrow-left"></a>
+                                <a href="#" class="fa-solid fa-arrow-right"></a>
+                            </div>
+                            <div class="selected-size">Mediano</div>
+                        </div>
+                        
+                        <!-- Carrusel de Tamaño 3 -->
+                        <div class="size-selector" id="itemcarrusel-3">
+                            <div class="tarjetacarrusel" id="tarjetacarrusel-3">
+                                <img src="vaso-de-papel (4).png" alt="Vaso de café" class="coffee-cup">
+                            </div>
+                            <div class="flechacarrusel">
+                                <a href="#" class="fa-solid fa-arrow-left"></a>
+                                <a href="#" class="fa-solid fa-arrow-right"></a>
+                            </div>
+                            <div class="selected-size">Pequeño</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-quantity">
+                    <div class="price">€2,50</div>
+                    <div class="quantity">
+                        <button class="btn-minus">-</button>
+                        <input type="number" value="1" min="1" max="100">
+                        <button class="btn-plus">+</button>
+                    </div>
+                </div>
+                
+                <button class="order-btn">ORDER</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="vertical-text-0">E S P R E</div>
+
+            <i  id="cart-icon" class="fa fa-cart-shopping">
+                <span class="cart-notification"></span>
+            </i>
+
+            <div id="cart-popup" class="popup">
+                <div class="popup-content">
+                    <h3>Carrito de Compras</h3>
+                    <ul id="cart-items-list">
+                        <!-- Los artículos del carrito se mostrarán aquí -->
+                    </ul>
+                    <button id="close-popup" class="close-popup">Cerrar</button>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div id="menu-item-capuccino" class="menu-item"><a href="cappucino.html">CAPPUCCINO</a></div>
+                <div id="menu-item-mocachino"  class="menu-item"><a href="mocachino.html">MOCACHINO</a></div>
+                <div id="menu-item-espresso" class="menu-item"><a href="americano.html">AMERICANO</a></div>
+                <div id="menu-item-americano" class="menu-item"><a href="espresso.html">ESPRESSO</a></div>
+            </div>
+    
+            <div class="image-container">
+                <img src="espresso.png" alt="Mocachino" class="coffee-image">
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
